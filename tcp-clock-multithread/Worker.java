@@ -1,3 +1,10 @@
+/**
+ * Autor: Arthur Faria Estrela
+ * Data: 18/03/2026
+ * Resumo: Esta classe implementa a interface Runnable e representa a tarefa executada por 
+ * cada Thread no servidor concorrente. Ela é responsável por isolar o processamento (leitura 
+ * da região, obtenção da hora com ZonedDateTime e envio da resposta) de cada cliente individualmente.
+ */
 import java.io.*;
 import java.net.Socket;
 import java.time.ZonedDateTime;

@@ -1,3 +1,10 @@
+/**
+ * Autor: Arthur Faria Estrela
+ * Data: 18/03/2026
+ * Resumo: Esta classe implementa o servidor com o protocolo UDP. Ela permanece em loop 
+ * aguardando datagramas contendo o ID de uma região, obtém a hora exata da localidade 
+ * usando o java.time.ZonedDateTime e envia a resposta formatada de volta ao cliente.
+ */
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.time.ZonedDateTime;

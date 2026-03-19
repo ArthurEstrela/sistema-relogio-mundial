@@ -1,3 +1,11 @@
+/**
+ * Autor: Arthur Faria Estrela
+ * Data: 18/03/2026
+ * Resumo: Esta classe implementa o cliente com o protocolo UDP. Ela solicita ao usuário 
+ * uma região geográfica, envia o datagrama para o servidor e aguarda a resposta com a 
+ * hora local. Possui um mecanismo de timeout de 5 segundos para evitar travamento caso 
+ * o servidor esteja offline.
+ */
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;

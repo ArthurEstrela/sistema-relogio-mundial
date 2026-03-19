@@ -1,3 +1,10 @@
+/**
+ * Autor: Arthur Faria Estrela
+ * Data: 18/03/2026
+ * Resumo: Esta classe implementa o cliente com o protocolo TCP. Ela estabelece uma conexão 
+ * orientada a fluxo com o servidor, envia o ID da região geográfica desejada por meio 
+ * de streams, lê a resposta contendo a data/hora e a exibe no console.
+ */
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;

@@ -1,3 +1,10 @@
+/**
+ * Autor: Arthur Faria Estrela
+ * Data: 18/03/2026
+ * Resumo: Esta classe implementa um servidor TCP Single-Thread. Ela atende às requisições 
+ * de forma sequencial, onde aceita a conexão de um cliente, processa a região recebida 
+ * para retornar a hora exata, devolve a resposta e encerra o socket antes de atender o próximo.
+ */
 import java.io.*;
 import java.net.*;
 import java.time.ZonedDateTime;
