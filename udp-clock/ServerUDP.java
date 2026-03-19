@@ -1,13 +1,10 @@
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.time.ZonedDateTime;
-import java.time.ZoneId; // Adicionado
-import java.time.format.DateTimeFormatter; // Adicionado
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 
-/**
- * @author Arthur
- * @since 18/03/2026
- */
+
 public class ServerUDP {
     public static void main(String[] args) {
         int porta = 9876;
@@ -25,7 +22,6 @@ public class ServerUDP {
 
                 String response;
                 try {
-                    // Agora o Java vai reconhecer o ZoneId e o DateTimeFormatter
                     ZonedDateTime now = ZonedDateTime.now(ZoneId.of(regionId));
                     response = now.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
                 } catch (Exception e) {
